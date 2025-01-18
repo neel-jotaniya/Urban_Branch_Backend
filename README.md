@@ -28,26 +28,28 @@ Installation
 3. Firebase Setup:
    - Create a Firebase project.
    - Enable Firestore Database in Firebase.
-   - Download the Firebase Admin SDK service account key and save it as `secret.json` in the project root.
+   - Download the Firebase Admin SDK service account key and save it as `firebase_key.json` in the project root.
 
 4. Environment Variables:
    Create a .env file with:
    ```
    OPENAI_API_KEY=your_openai_api_key
-   FIREBASE_CONFIG=secret.json
+   FIREBASE_CONFIG=firebase_key.json
    ```
 
 Project Structure
-----------------
+------------------
+```
 /project_root
-  ├── app/
-  │   ├── routes/          - API endpoints
-  │   ├── models/          - Database models
-  │   ├── services/        - Business logic
-  │   ├── constants/       - Application constants
-  │   └── config.py        - Configuration settings
-  ├── requirements.txt     - Python dependencies
-  └── run.py              - Application entry point
+├── app/
+│   ├── routes/          # API endpoints
+│   ├── models/          # Database models
+│   ├── services/        # Business logic
+│   ├── constants/       # Application constants
+│   └── config.py        # Configuration settings
+├── requirements.txt     # Python dependencies
+└── run.py               # Application entry point
+```
 
 API Endpoints
 ------------
@@ -114,8 +116,8 @@ Technical Details
    - Custom prompt templates for consistent responses.
 
 3. Authentication:
-   - CORS enabled for localhost:5173.
-   - Supports credentials.
+   - CORS enabled for localhost
+   
 
 Assumptions
 ----------------------------
