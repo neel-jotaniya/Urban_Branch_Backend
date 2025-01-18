@@ -27,7 +27,7 @@ Installation
 
 3. Firebase Setup:
    - Create a Firebase project.
-   - Enable Firestore Database in Firebase.
+   - Enable Firestore Database in Firebase and create two collections: 'chats' and 'users'
    - Download the Firebase Admin SDK service account key and save it as `secret.json` in the project root.
 
 4. Environment Variables:
