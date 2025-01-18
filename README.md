@@ -28,13 +28,12 @@ Installation
 3. Firebase Setup:
    - Create a Firebase project.
    - Enable Firestore Database in Firebase.
-   - Download the Firebase Admin SDK service account key and save it as `firebase_key.json` in the project root.
+   - Download the Firebase Admin SDK service account key and save it as `secret.json` in the project root.
 
 4. Environment Variables:
    Create a .env file with:
    ```
    OPENAI_API_KEY=your_openai_api_key
-   FIREBASE_CONFIG=firebase_key.json
    ```
 
 Project Structure
