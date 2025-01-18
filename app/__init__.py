@@ -13,8 +13,8 @@ def create_app():
     # Configure CORS to allow requests from specific origin
     cors_config = {
         r"/*": {
-            "origins": "http://localhost:5173",  # Allow frontend origin
-            "supports_credentials": True       # Allow cookies or Authorization headers
+            "origins": "*",                 # Allow all origins (all IPs and ports)
+            "supports_credentials": True    # Allow cookies or Authorization headers
         }
     }
     CORS(app, resources=cors_config)
